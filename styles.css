@@ -1,520 +1,1525 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iwona Karolewska | Posłanka na Sejm RP | Koalicja Obywatelska</title>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+/* --- CUSTOM PROPERTIES / DESIGN SYSTEM --- */
+:root {
+    /* Color Palette (Koalicja Obywatelska theme: Navy Blue, White, Red) */
+    --color-primary: #0A2240;       /* Deep Navy */
+    --color-primary-light: #143A67; /* Royal Navy */
+    --color-accent: #E30613;        /* KO Red */
+    --color-accent-hover: #B8000A;  /* Darker Red */
+    --color-bg-white: #FFFFFF;
+    --color-bg-light: #F8FAFC;      /* Light Slate Gray */
+    --color-bg-alt: #F1F5F9;
+    --color-text-dark: #0F172A;     /* Slate 900 */
+    --color-text-body: #334155;     /* Slate 700 */
+    --color-text-muted: #64748B;    /* Slate 500 */
+    --color-border: #E2E8F0;        /* Slate 200 */
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Oficjalna strona Iwony Karolewskiej - Posłanki na Sejm RP X kadencji z ramienia Koalicji Obywatelskiej. Poznaj moją historię, działania dla regionu i skontaktuj się ze mną.">
-    <meta name="keywords" content="Iwona Karolewska, Posłanka, Sejm, Koalicja Obywatelska, Świecie, Bydgoszcz, Kujawsko-Pomorskie, parlamentarzysta, polityk, KO">
-    <meta name="author" content="Iwona Karolewska">
+    /* Gradients */
+    --grad-navy: linear-gradient(135deg, #0A2240 0%, #1A467C 100%);
+    --grad-red: linear-gradient(135deg, #E30613 0%, #FF3B47 100%);
+    --grad-light: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://iwonakarolewska.pl/">
-    <meta property="og:title" content="Iwona Karolewska | Posłanka na Sejm RP">
-    <meta property="og:description" content="Oficjalna strona Iwony Karolewskiej - Posłanki na Sejm RP X kadencji z ramienia Koalicji Obywatelskiej.">
-    <meta property="og:image" content="images/iwona_hero.png">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- --- HEADER / NAVIGATION --- -->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#hero" class="logo-link" id="logo-nav">
-                    <div class="logo-icon">IK</div>
-                    <div class="logo-text">
-                        <span class="logo-title">Iwona Karolewska</span>
-                        <span class="logo-subtitle">Posłanka na Sejm RP</span>
-                    </div>
-                </a>
-                
-                <nav>
-                    <ul class="nav-menu" id="nav-menu">
-                        <li><a href="#hero" class="nav-link active" id="link-hero">Start</a></li>
-                        <li><a href="#about" class="nav-link" id="link-about">O mnie</a></li>
-                        <li><a href="#timeline" class="nav-link" id="link-timeline">Biografia</a></li>
-                        <li><a href="#focus" class="nav-link" id="link-focus">Działalność</a></li>
-                        <li><a href="#news" class="nav-link" id="link-news">Aktualności</a></li>
-                        <li><a href="#contact" class="nav-link" id="link-contact">Kontakt</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="nav-cta">
-                    <a href="#contact" class="btn btn-primary" id="btn-header-contact">
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-                
-                <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
-    <!-- --- HERO SECTION --- -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content reveal">
-                    <div class="hero-badge">
-                        <span class="hero-badge-dot"></span>
-                        Koalicja Obywatelska
-                    </div>
-                    <h1 class="hero-title">
-                        Blisko ludzi,<br>
-                        skuteczna w <span>działaniu</span>.
-                    </h1>
-                    <p class="hero-lead">
-                        Jako posłanka na Sejm RP, codziennie pracuję na rzecz silnego, nowoczesnego i przyjaznego regionu kujawsko-pomorskiego. Moim celem jest wsparcie lokalnych społeczności, kobiet oraz edukacji.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-accent" id="btn-hero-write">
-                            <span>Napisz do mnie</span>
-                        </a>
-                        <a href="#about" class="btn btn-outline" id="btn-hero-more">
-                            <span>Poznaj mnie</span>
-                        </a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-num">X <span> kadencja</span></div>
-                            <div class="stat-label">Sejmu Rzeczypospolitej Polskiej</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-num">100% <span> zaangażowania</span></div>
-                            <div class="stat-label">Dla powiatu świeckiego i bydgoskiego</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-num">15+ <span> lat</span></div>
-                            <div class="stat-label">W samorządzie i NGO</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-image-wrapper reveal delay-2">
-                    <div class="hero-image-container">
-                        <img src="images/iwona_hero.png" alt="Iwona Karolewska - oficjalny portret poselski" class="hero-image" id="hero-img">
-                    </div>
-                    <div class="hero-blob-bg"></div>
-                    
-                    <div class="hero-floating-card glass-card">
-                        <div class="floating-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <div class="floating-info">
-                            <h4>Rzeczowość i Sprawiedliwość</h4>
-                            <p>Praca w komisjach sejmowych</p>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-floating-card-2 glass-card">
-                        <div class="floating-icon-navy">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div class="floating-info">
-                            <h4>Blisko mieszkańców</h4>
-                            <p>Świecie, Bydgoszcz, Grudziądz</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --- ABOUT ME SECTION --- -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image-wrapper reveal">
-                    <div class="about-image-frame">
-                        <img src="images/iwona_about.png" alt="Iwona Karolewska w biurze poselskim" class="about-image" id="about-img">
-                    </div>
-                    <div class="about-experience-badge">
-                        <h3>100+</h3>
-                        <p>Zrealizowanych projektów</p>
-                    </div>
-                </div>
-                
-                <div class="about-text reveal delay-2">
-                    <div class="section-title-wrapper">
-                        <span class="section-tag">O mnie</span>
-                        <h2 class="section-title">Iwona <span>Karolewska</span></h2>
-                    </div>
-                    <div class="about-quote">
-                        "Samorząd i praca z ludźmi ukształtowały moją drogę. W Sejmie chcę być silnym głosem tych, którzy na co dzień tworzą naszą Ojczyznę."
-                    </div>
-                    <p>
-                        Urodziłam się i wychowałam w województwie kujawsko-pomorskim, z którym związałam całe swoje życie zawodowe i społeczne. Przez wiele lat pełniłam funkcję sekretarza powiatu świeckiego, co pozwoliło mi dogłębnie poznać mechanizmy funkcjonowania samorządu terytorialnego oraz problemy, z jakimi na co dzień mierzą się mieszkańcy miast i wsi.
-                    </p>
-                    <p>
-                        Jestem absolwentką Wydziału Nauk o Polityce i Administracji oraz studiów podyplomowych z zakresu zarządzania. Moja działalność społeczna to nie tylko praca urzędowa – to przede wszystkim setki spotkań z ludźmi, wsparcie dla organizacji pozarządowych i walka o równe szanse dla kobiet w życiu zawodowym.
-                    </p>
-                    
-                    <div class="about-meta">
-                        <div class="meta-box">
-                            <div class="meta-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                            </div>
-                            <div class="meta-content">
-                                <span>Wykształcenie</span>
-                                <strong>Wyższe politologiczne</strong>
-                            </div>
-                        </div>
-                        <div class="meta-box">
-                            <div class="meta-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                            </div>
-                            <div class="meta-content">
-                                <span>Doświadczenie</span>
-                                <strong>Samorząd i NGO</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --- TIMELINE SECTION --- -->
-    <section class="timeline-section" id="timeline">
-        <div class="container">
-            <div class="section-title-wrapper text-center reveal">
-                <span class="section-tag">Droga zawodowa</span>
-                <h2 class="section-title">Moja <span>historia</span></h2>
-                <p class="section-desc">Kluczowe momenty w mojej działalności publicznej, od lokalnych inicjatyw po mandat poselski w Warszawie.</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-card">
-                        <h3>Wybór na Posłankę na Sejm RP</h3>
-                        <p>Dzięki Państwa zaufaniu zdobyłam mandat poselski w okręgu bydgoskim (lista Koalicji Obywatelskiej). W Sejmie pracuję w Komisjach Samorządu Terytorialnego oraz Polityki Społecznej i Rodziny.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item reveal delay-1">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2023</div>
-                    <div class="timeline-card">
-                        <h3>Sekretarz Powiatu Świeckiego</h3>
-                        <p>Zarządzanie administracją powiatową, realizacja budżetu oraz koordynacja kluczowych inwestycji w regionie. Inicjowanie współpracy transgranicznej oraz promocja kulturalna powiatu.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item reveal delay-2">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2015 - 2018</div>
-                    <div class="timeline-card">
-                        <h3>Aktywizacja Kobiet i Trzeci Sektor</h3>
-                        <p>Powołanie i współtworzenie stowarzyszeń wspierających przedsiębiorczość kobiet w powiecie świeckim. Organizacja konferencji rozwojowych, szkoleń oraz debat społecznych.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item reveal delay-3">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Studia</div>
-                    <div class="timeline-card">
-                        <h3>Edukacja i Samorozwój</h3>
-                        <p>Ukończenie Politologii oraz podyplomowych studiów z zakresu Administracji Publicznej i Zarządzania Projektami na Uniwersytecie Mikołaja Kopernika w Toruniu.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --- AREAS OF FOCUS --- -->
-    <section class="focus" id="focus">
-        <div class="container">
-            <div class="section-title-wrapper text-center reveal">
-                <span class="section-tag">Obszary Działań</span>
-                <h2 class="section-title">Priorytety w <span>Sejmie</span></h2>
-                <p class="section-desc">Główne kierunki mojej pracy poselskiej, oparte na doświadczeniu samorządowym i potrzebach mieszkańców.</p>
-            </div>
-            
-            <div class="focus-grid">
-                <div class="focus-card reveal">
-                    <div class="focus-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h3>Samorząd i Rozwój Lokalny</h3>
-                    <p>Zwiększenie udziału samorządów w podatkach dochodowych, aby miasta i gminy miały środki na remonty dróg, transport publiczny oraz nowoczesną infrastrukturę komunalną.</p>
-                    <ul class="focus-list">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Odpolitycznienie funduszy rządowych</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Wsparcie inwestycji w powiatach i małych gminach</li>
-                    </ul>
-                </div>
-                
-                <div class="focus-card reveal delay-1">
-                    <div class="focus-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                    </div>
-                    <h3>Wsparcie Kobiet i Rodziny</h3>
-                    <p>Tworzenie warunków do równego startu zawodowego, dostępność żłobków i przedszkoli oraz aktywne wsparcie zdrowotne dla kobiet na każdym etapie ich życia.</p>
-                    <ul class="focus-list">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Równość płac na tych samych stanowiskach</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dostępność bezpłatnych badań profilaktycznych</li>
-                    </ul>
-                </div>
-                
-                <div class="focus-card reveal">
-                    <div class="focus-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10v6M22 6c0-1.1-1.8-2-4-2H6C3.8 4 2 4.9 2 6M22 18c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2M22 14c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2M22 10c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2"/></svg>
-                    </div>
-                    <h3>Edukacja i Nowoczesna Szkoła</h3>
-                    <p>Szkoła powinna uczyć krytycznego myślenia, pracy zespołowej i nowoczesnych technologii. Niezbędne jest odciążenie podstaw programowych oraz godne zarobki nauczycieli.</p>
-                    <ul class="focus-list">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mniej teorii, więcej umiejętności praktycznych</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dostęp do opieki psychologicznej w każdej szkole</li>
-                    </ul>
-                </div>
-                
-                <div class="focus-card reveal delay-1">
-                    <div class="focus-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12c0-2.4 1.35-4.48 3.32-5.52M12 6v6l4 2"/></svg>
-                    </div>
-                    <h3>NGO i Społeczeństwo Obywatelskie</h3>
-                    <p>Koła Gospodyń Wiejskich, Ochotnicze Straże Pożarne, kluby sportowe i lokalne stowarzyszenia to filary naszej tożsamości. Uproszczenie procedur grantowych ułatwi im rozwój.</p>
-                    <ul class="focus-list">
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Łatwiejsze pozyskiwanie małych grantów lokalnych</li>
-                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Promocja wolontariatu wśród młodzieży</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --- NEWS SECTION --- -->
-    <section class="news" id="news">
-        <div class="container">
-            <div class="section-title-wrapper text-center reveal">
-                <span class="section-tag">Aktualności</span>
-                <h2 class="section-title">Z życia <span>poselskiego</span></h2>
-                <p class="section-desc">Najnowsze informacje z prac w Sejmie RP oraz mojej aktywności w biurach poselskich w województwie.</p>
-            </div>
-            
-            <div class="news-grid">
-                <!-- Card 1 -->
-                <article class="news-card reveal">
-                    <div class="news-image-wrapper">
-                        <img src="images/iwona_activity.png" alt="Iwona Karolewska na spotkaniu z mieszkańcami" class="news-image" id="news-img-1">
-                        <span class="news-badge">W regionie</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                            15 czerwca 2026
-                        </div>
-                        <h3 class="news-title">Otwarcie Nowego Biura Poselskiego w Świeciu</h3>
-                        <p class="news-desc">Chcę być jak najbliżej Was. Nowe biuro to miejsce, w którym każdy mieszkaniec powiatu świeckiego może zgłosić interwencję lub poprosić o poradę prawną. Zapraszam na dyżury poselskie w każdy poniedziałek.</p>
-                        <a href="#contact" class="news-link">
-                            Więcej informacji
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Card 2 -->
-                <article class="news-card reveal delay-1">
-                    <div class="news-image-wrapper">
-                        <img src="images/iwona_hero.png" alt="Wystąpienie w Sejmie" class="news-image" id="news-img-2">
-                        <span class="news-badge">Sejm</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                            8 czerwca 2026
-                        </div>
-                        <h3 class="news-title">Ustawa o wzmocnieniu finansów samorządów</h3>
-                        <p class="news-desc">Podczas dzisiejszych prac sejmowych złożyłam poprawki gwarantujące wyższy udział powiatów ziemskich w podatkach CIT. To konkretne miliony złotych na inwestycje w naszym regionie, szkoły i szpitale powiatowe.</p>
-                        <a href="#contact" class="news-link">
-                            Więcej informacji
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Card 3 -->
-                <article class="news-card reveal delay-2">
-                    <div class="news-image-wrapper">
-                        <img src="images/iwona_about.png" alt="Kongres kobiet w Bydgoszczy" class="news-image" id="news-img-3">
-                        <span class="news-badge">Inicjatywa</span>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-date">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                            29 maja 2026
-                        </div>
-                        <h3 class="news-title">Kongres Kobiet Przedsiębiorczych w Bydgoszczy</h3>
-                        <p class="news-desc">Miałam zaszczyt objąć patronatem honorowym Kongres Kobiet w Bydgoszczy. Dyskutowałyśmy o barierach prawnych w biznesie, o promowaniu liderek w lokalnym środowisku oraz o wsparciu prawno-podatkowym dla małych firm.</p>
-                        <a href="#contact" class="news-link">
-                            Więcej informacji
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="news-actions-bottom reveal">
-                <a href="#contact" class="btn btn-outline" id="btn-news-all">
-                    <span>Zobacz wszystkie aktywności</span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- --- CONTACT SECTION --- -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title-wrapper text-center reveal">
-                <span class="section-tag">Kontakt</span>
-                <h2 class="section-title">Napisz do <span>mnie</span></h2>
-                <p class="section-desc">Masz sprawę, którą powinien zająć się parlamentarzysta? Chcesz zgłosić problem lokalny? Napisz lub odwiedź moje biuro.</p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info-column reveal">
-                    <div class="contact-intro">
-                        <h3>Biura Poselskie</h3>
-                        <p>Moje biura są otwarte dla każdego mieszkańca. Zapraszam do kontaktu telefonicznego, mailowego oraz na spotkania stacjonarne po uprzednim umówieniu terminu.</p>
-                    </div>
-                    
-                    <div class="office-card">
-                        <div class="office-header">
-                            <div class="office-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                            </div>
-                            <div class="office-title">
-                                <h4>Biuro Poselskie w Świeciu</h4>
-                                <p>Główne biuro okręgowe</p>
-                            </div>
-                        </div>
-                        <div class="office-details">
-                            <div class="detail-row">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                <span>ul. Klasztorna 2, 86-100 Świecie</span>
-                            </div>
-                            <div class="detail-row">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.1-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                <span><a href="tel:+48523330055" id="phone-swiecie">+48 52 333 00 55</a></span>
-                            </div>
-                            <div class="detail-row">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                <span><a href="mailto:kontakt@iwonakarolewska.pl" id="email-swiecie">kontakt@iwonakarolewska.pl</a></span>
-                            </div>
-                            <div class="detail-row">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                <span>Poniedziałek - Piątek: 9:00 - 16:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-wrapper">
-                        <h4 style="font-weight: 700; color: var(--color-primary); margin-bottom: 16px;">Śledź moją aktywność</h4>
-                        <div class="social-links">
-                            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook Iwona Karolewska" id="social-fb">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                            </a>
-                            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram Iwona Karolewska" id="social-ig">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                            </a>
-                            <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="Twitter / X Iwona Karolewska" id="social-x">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z M4 20l6.768 -6.768M20 4l-6.768 6.768"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper reveal delay-2">
-                    <form id="contactForm" novalidate>
-                        <div class="form-group">
-                            <label for="formName" class="form-label">Imię i Nazwisko *</label>
-                            <input type="text" id="formName" class="form-control" placeholder="Jan Kowalski" required>
-                            <div class="form-error" id="nameError">Imię i nazwisko jest wymagane.</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="formEmail" class="form-label">Adres E-mail *</label>
-                            <input type="email" id="formEmail" class="form-control" placeholder="jan.kowalski@email.com" required>
-                            <div class="form-error" id="emailError">Proszę podać poprawny adres e-mail.</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="formSubject" class="form-label">Temat wiadomości *</label>
-                            <input type="text" id="formSubject" class="form-control" placeholder="np. Interwencja poselska, Zapytanie..." required>
-                            <div class="form-error" id="subjectError">Proszę wpisać temat wiadomości.</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="formMessage" class="form-label">Treść wiadomości *</label>
-                            <textarea id="formMessage" class="form-control" placeholder="Opisz sprawę..." required></textarea>
-                            <div class="form-error" id="messageError">Wiadomość nie może być pusta.</div>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary form-submit-btn" id="btn-submit-form">
-                            <span>Wyślij wiadomość</span>
-                        </button>
-                        
-                        <div class="form-status" id="formStatus">
-                            <span class="status-message">Dziękujemy! Twoja wiadomość została wysłana pomyślnie. Skontaktujemy się wkrótce.</span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- --- FOOTER --- -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <div class="logo-icon">IK</div>
-                        <div class="logo-text">
-                            <span class="logo-title">Iwona Karolewska</span>
-                            <span class="logo-subtitle" style="color: rgba(255,255,255,0.6);">Posłanka na Sejm RP</span>
-                        </div>
-                    </div>
-                    <p class="footer-desc">
-                        Mandat poselski to dla mnie zaszczyt i zobowiązanie. Pracuję dla regionu i jego mieszkańców, wierząc, że wspólnie możemy budować lepszą przyszłość.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="footer-title">Menu</h4>
-                    <ul class="footer-links-list">
-                        <li><a href="#hero" id="footer-link-hero">Start</a></li>
-                        <li><a href="#about" id="footer-link-about">O mnie</a></li>
-                        <li><a href="#timeline" id="footer-link-timeline">Biografia</a></li>
-                        <li><a href="#focus" id="footer-link-focus">Działalność</a></li>
-                        <li><a href="#news" id="footer-link-news">Aktualności</a></li>
-                        <li><a href="#contact" id="footer-link-contact">Kontakt</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="footer-title">Klub Parlamentarny</h4>
-                    <p class="footer-meta-info">
-                        Członkini <strong>Klubu Parlamentarnego Koalicja Obywatelska</strong> (Platforma Obywatelska, Nowoczesna, Inicjatywa Polska, Zieloni).<br><br>
-                        Prace parlamentarne można śledzić na oficjalnych stronach Sejmu RP.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    &copy; 2026 Iwona Karolewska. Wszelkie prawa zastrzeżone. Strona w kolorach <span>Koalicji Obywatelskiej</span>.
-                </div>
-                <div class="footer-legal">
-                    Projekt i wdrożenie dla celów reprezentacyjnych.
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Script -->
-    <script src="script.js"></script>
-</body>
-</html>
+    /* Shadows */
+    --shadow-sm: 0 2px 4px 0 rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+    --shadow-lg: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+    --shadow-premium: 0 25px 50px -12px rgba(10, 34, 64, 0.15);
+    
+    /* Typography */
+    --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    
+    /* Layout Spacing */
+    --section-padding: clamp(60px, 8vw, 120px);
+}
+/* --- RESET & GLOBAL STYLES --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-white);
+    color: var(--color-text-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+/* --- UTILITY CLASSES --- */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.text-center { text-align: center; }
+.section-title-wrapper {
+    margin-bottom: clamp(40px, 6vw, 60px);
+    position: relative;
+}
+.section-tag {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.section-title {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+.section-title span {
+    position: relative;
+    white-space: nowrap;
+}
+.section-title span::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--grad-red);
+    border-radius: var(--radius-full);
+}
+.section-desc {
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+}
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    box-shadow: 0 4px 14px 0 rgba(10, 34, 64, 0.3);
+}
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--grad-navy);
+    opacity: 0;
+    transition: var(--transition-normal);
+    z-index: 1;
+}
+.btn-primary > * {
+    position: relative;
+    z-index: 2;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px 0 rgba(10, 34, 64, 0.4);
+}
+.btn-primary:hover::before {
+    opacity: 1;
+}
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    box-shadow: 0 4px 14px 0 rgba(227, 6, 19, 0.3);
+}
+.btn-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--grad-red);
+    opacity: 0;
+    transition: var(--transition-normal);
+    z-index: 1;
+}
+.btn-accent > * {
+    position: relative;
+    z-index: 2;
+}
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px 0 rgba(227, 6, 19, 0.4);
+}
+.btn-accent:hover::before {
+    opacity: 1;
+}
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    transform: translateY(-2px);
+}
+.btn-outline-white {
+    background-color: transparent;
+    color: var(--color-bg-white);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.btn-outline-white:hover {
+    background-color: var(--color-bg-white);
+    color: var(--color-primary);
+    border-color: var(--color-bg-white);
+    transform: translateY(-2px);
+}
+/* Glassmorphism card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+/* --- HEADER & NAVIGATION --- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+    transition: var(--transition-normal);
+}
+.header.scrolled {
+    padding: 8px 0;
+    box-shadow: var(--shadow-md);
+    background: rgba(255, 255, 255, 0.92);
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    transition: var(--transition-normal);
+}
+.header.scrolled .nav-wrapper {
+    height: 64px;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--grad-navy);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-bg-white);
+    font-weight: 800;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-accent);
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+.logo-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.logo-subtitle {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    letter-spacing: 0.1em;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-body);
+    position: relative;
+    padding: 8px 0;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--color-primary);
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: var(--transition-fast);
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+/* Hamburger mobile button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 1100;
+}
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: var(--transition-normal);
+    transform-origin: left center;
+}
+/* --- HERO SECTION --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    background: radial-gradient(circle at 80% 20%, rgba(10, 34, 64, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 10% 80%, rgba(227, 6, 19, 0.03) 0%, transparent 40%),
+                var(--color-bg-light);
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(10, 34, 64, 0.1) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    opacity: 0.3;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero-badge {
+    background: rgba(227, 6, 19, 0.08);
+    border: 1px solid rgba(227, 6, 19, 0.15);
+    color: var(--color-accent);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--color-accent);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+.hero-title span {
+    color: var(--color-accent);
+    display: inline-block;
+}
+.hero-lead {
+    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--color-text-body);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 32px;
+    width: 100%;
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+.stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+.stat-num span {
+    color: var(--color-accent);
+}
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image-container {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--shadow-premium);
+    background-color: var(--color-primary);
+}
+.hero-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 40px rgba(10, 34, 64, 0.4);
+    pointer-events: none;
+}
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    transition: var(--transition-slow);
+}
+.hero-image-container:hover .hero-image {
+    transform: scale(1.03);
+}
+.hero-blob-bg {
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    background: radial-gradient(circle, rgba(10, 34, 64, 0.08) 0%, transparent 60%);
+    z-index: 1;
+    border-radius: 50%;
+    top: -15%;
+    right: -15%;
+}
+.hero-floating-card {
+    position: absolute;
+    bottom: 30px;
+    left: -40px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    animation: floating 6s ease-in-out infinite;
+}
+.hero-floating-card-2 {
+    position: absolute;
+    top: 40px;
+    right: -20px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    animation: floating 6s ease-in-out infinite 3s;
+}
+.floating-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(227, 6, 19, 0.1);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.floating-icon-navy {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(10, 34, 64, 0.1);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.floating-info h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.floating-info p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* --- ABOUT ME & BIOGRAPHY --- */
+.about {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-white);
+    position: relative;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-image-wrapper {
+    position: relative;
+}
+.about-image-frame {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 5;
+    background-color: var(--color-primary);
+}
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    z-index: 2;
+    border-bottom: 5px solid var(--color-accent);
+}
+.about-experience-badge h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.about-experience-badge p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 4px;
+}
+.about-quote {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    line-height: 1.6;
+    border-left: 4px solid var(--color-accent);
+    padding-left: 20px;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+.about-text p {
+    font-size: 1rem;
+    color: var(--color-text-body);
+    margin-bottom: 20px;
+}
+.about-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+.meta-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+}
+.meta-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meta-content span {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+.meta-content strong {
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+/* --- BIOGRAPHY TIMELINE --- */
+.timeline-section {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-light);
+}
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 48px auto 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: var(--color-border);
+    transform: translateX(-50%);
+    border-radius: var(--radius-full);
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 0 40px 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition-slow);
+}
+.timeline-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+.timeline-dot {
+    position: absolute;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-bg-white);
+    border: 4px solid var(--color-primary);
+    border-radius: 50%;
+    z-index: 2;
+    transition: var(--transition-fast);
+}
+.timeline-item:nth-child(odd) .timeline-dot {
+    right: -12px;
+}
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -12px;
+}
+.timeline-item:hover .timeline-dot {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: scale(1.2);
+}
+.timeline-date {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: 16px;
+}
+.timeline-item:hover .timeline-date {
+    background: var(--grad-red);
+}
+.timeline-card {
+    background-color: var(--color-bg-white);
+    padding: 28px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+.timeline-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: rgba(10, 34, 64, 0.1);
+}
+.timeline-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+.timeline-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-body);
+}
+/* --- AREAS OF FOCUS / PROGRAM --- */
+.focus {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-white);
+}
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+.focus-card {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+.focus-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: var(--transition-normal);
+}
+.focus-card:hover::before {
+    background-color: var(--color-accent);
+    height: 100%;
+}
+.focus-card:hover {
+    background-color: var(--color-bg-white);
+    box-shadow: var(--shadow-premium);
+    transform: translateY(-6px);
+    border-color: transparent;
+}
+.focus-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg-white);
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: var(--transition-normal);
+}
+.focus-card:hover .focus-icon {
+    background: var(--grad-navy);
+    color: var(--color-bg-white);
+}
+.focus-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+.focus-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-body);
+    margin-bottom: 20px;
+}
+.focus-list {
+    list-style: none;
+}
+.focus-list li {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.focus-list li svg {
+    color: var(--color-accent);
+}
+/* --- NEWS / AKTUALNOSCI --- */
+.news {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-light);
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+.news-card {
+    background-color: var(--color-bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+.news-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+    border-color: rgba(10, 34, 64, 0.05);
+}
+.news-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background-color: var(--color-primary);
+}
+.news-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+.news-card:hover .news-image {
+    transform: scale(1.05);
+}
+.news-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+.news-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.news-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.news-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.35;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.7em;
+}
+.news-desc {
+    font-size: 0.95rem;
+    color: var(--color-text-body);
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.news-link {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition-fast);
+}
+.news-link svg {
+    transition: var(--transition-fast);
+}
+.news-link:hover {
+    color: var(--color-accent);
+}
+.news-link:hover svg {
+    transform: translateX(4px);
+}
+.news-actions-bottom {
+    text-align: center;
+    margin-top: 48px;
+}
+/* --- CONTACT & OFFICES --- */
+.contact {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-white);
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    margin-top: 48px;
+}
+.contact-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contact-intro h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+.contact-intro p {
+    font-size: 1.05rem;
+    color: var(--color-text-body);
+}
+.office-card {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.office-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1.5px solid var(--color-border);
+    padding-bottom: 16px;
+}
+.office-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.office-title h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.office-title p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+.office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+.detail-row svg {
+    color: var(--color-accent);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+.detail-row span {
+    color: var(--color-text-body);
+}
+.detail-row a:hover {
+    color: var(--color-accent);
+}
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+}
+.social-icon:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    transform: translateY(-3px);
+    border-color: transparent;
+}
+/* Contact Form */
+.contact-form-wrapper {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+}
+.form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+.form-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+.form-control {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    transition: var(--transition-normal);
+}
+.form-control:focus {
+    border-color: var(--color-primary-light);
+    box-shadow: 0 0 0 4px rgba(10, 34, 64, 0.1);
+}
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+.form-error {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-top: 6px;
+    display: none;
+}
+.form-control.error {
+    border-color: var(--color-accent);
+}
+.form-control.error:focus {
+    box-shadow: 0 0 0 4px rgba(227, 6, 19, 0.15);
+}
+.form-submit-btn {
+    width: 100%;
+}
+.form-status {
+    padding: 16px;
+    border-radius: var(--radius-md);
+    margin-top: 20px;
+    font-weight: 600;
+    display: none;
+    align-items: center;
+    gap: 12px;
+}
+.form-status.success {
+    display: flex;
+    background-color: #DEF7EC;
+    color: #03543F;
+    border: 1px solid #BCF0DA;
+}
+.form-status.error {
+    display: flex;
+    background-color: #FDE8E8;
+    color: #9B1C1C;
+    border: 1px solid #FBD5D5;
+}
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--color-primary);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 80px 0 30px;
+    font-size: 0.95rem;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+}
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.footer-logo .logo-icon {
+    background: var(--color-bg-white);
+    color: var(--color-primary);
+}
+.footer-logo .logo-icon::after {
+    background: var(--color-accent);
+}
+.footer-logo .logo-title {
+    color: var(--color-bg-white);
+}
+.footer-desc {
+    max-width: 320px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-bg-white);
+    margin-bottom: 24px;
+    position: relative;
+}
+.footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-links-list a {
+    transition: var(--transition-fast);
+}
+.footer-links-list a:hover {
+    color: var(--color-accent);
+    transform: translateX(4px);
+    display: inline-block;
+}
+.footer-meta-info {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+.footer-meta-info strong {
+    color: var(--color-bg-white);
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.85rem;
+}
+.footer-copyright span {
+    color: var(--color-accent);
+}
+/* --- REVEAL ON SCROLL ANIMATION --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Delay modifiers */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+/* --- RESPONSIVE DESIGN (MEDIA QUERIES) --- */
+@media (max-width: 1024px) {
+    .hero-grid {
+        gap: 40px;
+    }
+    .about-grid {
+        gap: 40px;
+    }
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+@media (max-width: 992px) {
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    .timeline-dot {
+        left: 8px !important;
+        right: auto !important;
+    }
+    
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-about {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--color-bg-white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 24px;
+        transition: var(--transition-normal);
+        overflow-y: auto;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+    
+    .header.scrolled .nav-menu {
+        top: 64px;
+        height: calc(100vh - 64px);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-cta {
+        display: none; /* Hide top cta on mobile, could integrate into nav-menu */
+    }
+    
+    /* Hamburger Active State */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 1px);
+        background-color: var(--color-accent);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(2px, -1px);
+        background-color: var(--color-accent);
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 48px;
+    }
+    .hero-content {
+        align-items: center;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .hero-image-wrapper {
+        order: -1; /* Place image on top on mobile */
+    }
+    .hero-floating-card {
+        left: 10px;
+        bottom: 10px;
+    }
+    .hero-floating-card-2 {
+        right: 10px;
+        top: 10px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-experience-badge {
+        right: 0;
+        bottom: -10px;
+        padding: 16px;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    .footer-about {
+        grid-column: span 1;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* --- MODAL FOR NEWS --- */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 34, 64, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-normal);
+    padding: 20px;
+}
+.modal-backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-card {
+    background-color: var(--color-bg-white);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 680px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-premium);
+    position: relative;
+    transform: scale(0.9);
+    transition: transform var(--transition-normal);
+    border: 1px solid var(--color-border);
+}
+.modal-backdrop.active .modal-card {
+    transform: scale(1);
+}
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+    border: 1px solid var(--color-border);
+}
+.modal-close:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    transform: rotate(90deg);
+    border-color: transparent;
+}
+.modal-body {
+    padding: 40px;
+}
+.modal-badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-bg-white);
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+.modal-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+}
+.modal-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.25;
+    margin-bottom: 24px;
+}
+.modal-image-container {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background-color: var(--color-primary);
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-sm);
+}
+.modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-content-text {
+    font-size: 1.05rem;
+    color: var(--color-text-body);
+    line-height: 1.7;
+}
+.modal-content-text p {
+    margin-bottom: 16px;
+}
+body.modal-open {
+    overflow: hidden;
+}
