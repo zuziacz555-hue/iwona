@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwona Karolewska | Posłanka na Sejm RP | Koalicja Obywatelska</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Oficjalna strona Iwony Karolewskiej - Posłanki na Sejm RP X kadencji z ramienia Koalicji Obywatelskiej. Poznaj moją historię, działania dla regionu i skontaktuj się ze mną.">
+    <meta name="keywords" content="Iwona Karolewska, Posłanka, Sejm, Koalicja Obywatelska, Świecie, Bydgoszcz, Kujawsko-Pomorskie, parlamentarzysta, polityk, KO">
+    <meta name="author" content="Iwona Karolewska">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iwonakarolewska.pl/">
+    <meta property="og:title" content="Iwona Karolewska | Posłanka na Sejm RP">
+    <meta property="og:description" content="Oficjalna strona Iwony Karolewskiej - Posłanki na Sejm RP X kadencji z ramienia Koalicji Obywatelskiej.">
+    <meta property="og:image" content="images/iwona_hero.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- --- HEADER / NAVIGATION --- -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#hero" class="logo-link" id="logo-nav">
+                    <div class="logo-icon">IK</div>
+                    <div class="logo-text">
+                        <span class="logo-title">Iwona Karolewska</span>
+                        <span class="logo-subtitle">Posłanka na Sejm RP</span>
+                    </div>
+                </a>
+                
+                <nav>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#hero" class="nav-link active" id="link-hero">Start</a></li>
+                        <li><a href="#about" class="nav-link" id="link-about">O mnie</a></li>
+                        <li><a href="#timeline" class="nav-link" id="link-timeline">Biografia</a></li>
+                        <li><a href="#focus" class="nav-link" id="link-focus">Działalność</a></li>
+                        <li><a href="#news" class="nav-link" id="link-news">Aktualności</a></li>
+                        <li><a href="#contact" class="nav-link" id="link-contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-primary" id="btn-header-contact">
+                        <span>Kontakt</span>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- --- HERO SECTION --- -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        Koalicja Obywatelska
+                    </div>
+                    <h1 class="hero-title">
+                        Blisko ludzi,<br>
+                        skuteczna w <span>działaniu</span>.
+                    </h1>
+                    <p class="hero-lead">
+                        Jako posłanka na Sejm RP, codziennie pracuję na rzecz silnego, nowoczesnego i przyjaznego regionu kujawsko-pomorskiego. Moim celem jest wsparcie lokalnych społeczności, kobiet oraz edukacji.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-accent" id="btn-hero-write">
+                            <span>Napisz do mnie</span>
+                        </a>
+                        <a href="#about" class="btn btn-outline" id="btn-hero-more">
+                            <span>Poznaj mnie</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-num">X <span> kadencja</span></div>
+                            <div class="stat-label">Sejmu Rzeczypospolitej Polskiej</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">100% <span> zaangażowania</span></div>
+                            <div class="stat-label">Dla powiatu świeckiego i bydgoskiego</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">15+ <span> lat</span></div>
+                            <div class="stat-label">W samorządzie i NGO</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper reveal delay-2">
+                    <div class="hero-image-container">
+                        <img src="images/iwona_hero.png" alt="Iwona Karolewska - oficjalny portret poselski" class="hero-image" id="hero-img">
+                    </div>
+                    <div class="hero-blob-bg"></div>
+                    
+                    <div class="hero-floating-card glass-card">
+                        <div class="floating-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="floating-info">
+                            <h4>Rzeczowość i Sprawiedliwość</h4>
+                            <p>Praca w komisjach sejmowych</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-floating-card-2 glass-card">
+                        <div class="floating-icon-navy">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="floating-info">
+                            <h4>Blisko mieszkańców</h4>
+                            <p>Świecie, Bydgoszcz, Grudziądz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- ABOUT ME SECTION --- -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <div class="about-image-frame">
+                        <img src="images/iwona_about.png" alt="Iwona Karolewska w biurze poselskim" class="about-image" id="about-img">
+                    </div>
+                    <div class="about-experience-badge">
+                        <h3>100+</h3>
+                        <p>Zrealizowanych projektów</p>
+                    </div>
+                </div>
+                
+                <div class="about-text reveal delay-2">
+                    <div class="section-title-wrapper">
+                        <span class="section-tag">O mnie</span>
+                        <h2 class="section-title">Iwona <span>Karolewska</span></h2>
+                    </div>
+                    <div class="about-quote">
+                        "Samorząd i praca z ludźmi ukształtowały moją drogę. W Sejmie chcę być silnym głosem tych, którzy na co dzień tworzą naszą Ojczyznę."
+                    </div>
+                    <p>
+                        Urodziłam się i wychowałam w województwie kujawsko-pomorskim, z którym związałam całe swoje życie zawodowe i społeczne. Przez wiele lat pełniłam funkcję sekretarza powiatu świeckiego, co pozwoliło mi dogłębnie poznać mechanizmy funkcjonowania samorządu terytorialnego oraz problemy, z jakimi na co dzień mierzą się mieszkańcy miast i wsi.
+                    </p>
+                    <p>
+                        Jestem absolwentką Wydziału Nauk o Polityce i Administracji oraz studiów podyplomowych z zakresu zarządzania. Moja działalność społeczna to nie tylko praca urzędowa – to przede wszystkim setki spotkań z ludźmi, wsparcie dla organizacji pozarządowych i walka o równe szanse dla kobiet w życiu zawodowym.
+                    </p>
+                    
+                    <div class="about-meta">
+                        <div class="meta-box">
+                            <div class="meta-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            </div>
+                            <div class="meta-content">
+                                <span>Wykształcenie</span>
+                                <strong>Wyższe politologiczne</strong>
+                            </div>
+                        </div>
+                        <div class="meta-box">
+                            <div class="meta-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            </div>
+                            <div class="meta-content">
+                                <span>Doświadczenie</span>
+                                <strong>Samorząd i NGO</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- TIMELINE SECTION --- -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-title-wrapper text-center reveal">
+                <span class="section-tag">Droga zawodowa</span>
+                <h2 class="section-title">Moja <span>historia</span></h2>
+                <p class="section-desc">Kluczowe momenty w mojej działalności publicznej, od lokalnych inicjatyw po mandat poselski w Warszawie.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-card">
+                        <h3>Wybór na Posłankę na Sejm RP</h3>
+                        <p>Dzięki Państwa zaufaniu zdobyłam mandat poselski w okręgu bydgoskim (lista Koalicji Obywatelskiej). W Sejmie pracuję w Komisjach Samorządu Terytorialnego oraz Polityki Społecznej i Rodziny.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2023</div>
+                    <div class="timeline-card">
+                        <h3>Sekretarz Powiatu Świeckiego</h3>
+                        <p>Zarządzanie administracją powiatową, realizacja budżetu oraz koordynacja kluczowych inwestycji w regionie. Inicjowanie współpracy transgranicznej oraz promocja kulturalna powiatu.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015 - 2018</div>
+                    <div class="timeline-card">
+                        <h3>Aktywizacja Kobiet i Trzeci Sektor</h3>
+                        <p>Powołanie i współtworzenie stowarzyszeń wspierających przedsiębiorczość kobiet w powiecie świeckim. Organizacja konferencji rozwojowych, szkoleń oraz debat społecznych.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Studia</div>
+                    <div class="timeline-card">
+                        <h3>Edukacja i Samorozwój</h3>
+                        <p>Ukończenie Politologii oraz podyplomowych studiów z zakresu Administracji Publicznej i Zarządzania Projektami na Uniwersytecie Mikołaja Kopernika w Toruniu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- AREAS OF FOCUS --- -->
+    <section class="focus" id="focus">
+        <div class="container">
+            <div class="section-title-wrapper text-center reveal">
+                <span class="section-tag">Obszary Działań</span>
+                <h2 class="section-title">Priorytety w <span>Sejmie</span></h2>
+                <p class="section-desc">Główne kierunki mojej pracy poselskiej, oparte na doświadczeniu samorządowym i potrzebach mieszkańców.</p>
+            </div>
+            
+            <div class="focus-grid">
+                <div class="focus-card reveal">
+                    <div class="focus-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Samorząd i Rozwój Lokalny</h3>
+                    <p>Zwiększenie udziału samorządów w podatkach dochodowych, aby miasta i gminy miały środki na remonty dróg, transport publiczny oraz nowoczesną infrastrukturę komunalną.</p>
+                    <ul class="focus-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Odpolitycznienie funduszy rządowych</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Wsparcie inwestycji w powiatach i małych gminach</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-card reveal delay-1">
+                    <div class="focus-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3>Wsparcie Kobiet i Rodziny</h3>
+                    <p>Tworzenie warunków do równego startu zawodowego, dostępność żłobków i przedszkoli oraz aktywne wsparcie zdrowotne dla kobiet na każdym etapie ich życia.</p>
+                    <ul class="focus-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Równość płac na tych samych stanowiskach</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dostępność bezpłatnych badań profilaktycznych</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-card reveal">
+                    <div class="focus-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10v6M22 6c0-1.1-1.8-2-4-2H6C3.8 4 2 4.9 2 6M22 18c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2M22 14c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2M22 10c0 1.1-1.8 2-4 2H6c-2.2 0-4-.9-4-2"/></svg>
+                    </div>
+                    <h3>Edukacja i Nowoczesna Szkoła</h3>
+                    <p>Szkoła powinna uczyć krytycznego myślenia, pracy zespołowej i nowoczesnych technologii. Niezbędne jest odciążenie podstaw programowych oraz godne zarobki nauczycieli.</p>
+                    <ul class="focus-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mniej teorii, więcej umiejętności praktycznych</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dostęp do opieki psychologicznej w każdej szkole</li>
+                    </ul>
+                </div>
+                
+                <div class="focus-card reveal delay-1">
+                    <div class="focus-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12c0-2.4 1.35-4.48 3.32-5.52M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>NGO i Społeczeństwo Obywatelskie</h3>
+                    <p>Koła Gospodyń Wiejskich, Ochotnicze Straże Pożarne, kluby sportowe i lokalne stowarzyszenia to filary naszej tożsamości. Uproszczenie procedur grantowych ułatwi im rozwój.</p>
+                    <ul class="focus-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Łatwiejsze pozyskiwanie małych grantów lokalnych</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Promocja wolontariatu wśród młodzieży</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- NEWS SECTION --- -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-title-wrapper text-center reveal">
+                <span class="section-tag">Aktualności</span>
+                <h2 class="section-title">Z życia <span>poselskiego</span></h2>
+                <p class="section-desc">Najnowsze informacje z prac w Sejmie RP oraz mojej aktywności w biurach poselskich w województwie.</p>
+            </div>
+            
+            <div class="news-grid">
+                <!-- Card 1 -->
+                <article class="news-card reveal">
+                    <div class="news-image-wrapper">
+                        <img src="images/iwona_activity.png" alt="Iwona Karolewska na spotkaniu z mieszkańcami" class="news-image" id="news-img-1">
+                        <span class="news-badge">W regionie</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            15 czerwca 2026
+                        </div>
+                        <h3 class="news-title">Otwarcie Nowego Biura Poselskiego w Świeciu</h3>
+                        <p class="news-desc">Chcę być jak najbliżej Was. Nowe biuro to miejsce, w którym każdy mieszkaniec powiatu świeckiego może zgłosić interwencję lub poprosić o poradę prawną. Zapraszam na dyżury poselskie w każdy poniedziałek.</p>
+                        <a href="#contact" class="news-link">
+                            Więcej informacji
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Card 2 -->
+                <article class="news-card reveal delay-1">
+                    <div class="news-image-wrapper">
+                        <img src="images/iwona_hero.png" alt="Wystąpienie w Sejmie" class="news-image" id="news-img-2">
+                        <span class="news-badge">Sejm</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            8 czerwca 2026
+                        </div>
+                        <h3 class="news-title">Ustawa o wzmocnieniu finansów samorządów</h3>
+                        <p class="news-desc">Podczas dzisiejszych prac sejmowych złożyłam poprawki gwarantujące wyższy udział powiatów ziemskich w podatkach CIT. To konkretne miliony złotych na inwestycje w naszym regionie, szkoły i szpitale powiatowe.</p>
+                        <a href="#contact" class="news-link">
+                            Więcej informacji
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Card 3 -->
+                <article class="news-card reveal delay-2">
+                    <div class="news-image-wrapper">
+                        <img src="images/iwona_about.png" alt="Kongres kobiet w Bydgoszczy" class="news-image" id="news-img-3">
+                        <span class="news-badge">Inicjatywa</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            29 maja 2026
+                        </div>
+                        <h3 class="news-title">Kongres Kobiet Przedsiębiorczych w Bydgoszczy</h3>
+                        <p class="news-desc">Miałam zaszczyt objąć patronatem honorowym Kongres Kobiet w Bydgoszczy. Dyskutowałyśmy o barierach prawnych w biznesie, o promowaniu liderek w lokalnym środowisku oraz o wsparciu prawno-podatkowym dla małych firm.</p>
+                        <a href="#contact" class="news-link">
+                            Więcej informacji
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="news-actions-bottom reveal">
+                <a href="#contact" class="btn btn-outline" id="btn-news-all">
+                    <span>Zobacz wszystkie aktywności</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- --- CONTACT SECTION --- -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title-wrapper text-center reveal">
+                <span class="section-tag">Kontakt</span>
+                <h2 class="section-title">Napisz do <span>mnie</span></h2>
+                <p class="section-desc">Masz sprawę, którą powinien zająć się parlamentarzysta? Chcesz zgłosić problem lokalny? Napisz lub odwiedź moje biuro.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-column reveal">
+                    <div class="contact-intro">
+                        <h3>Biura Poselskie</h3>
+                        <p>Moje biura są otwarte dla każdego mieszkańca. Zapraszam do kontaktu telefonicznego, mailowego oraz na spotkania stacjonarne po uprzednim umówieniu terminu.</p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <div class="office-header">
+                            <div class="office-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                            <div class="office-title">
+                                <h4>Biuro Poselskie w Świeciu</h4>
+                                <p>Główne biuro okręgowe</p>
+                            </div>
+                        </div>
+                        <div class="office-details">
+                            <div class="detail-row">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>ul. Klasztorna 2, 86-100 Świecie</span>
+                            </div>
+                            <div class="detail-row">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.1-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span><a href="tel:+48523330055" id="phone-swiecie">+48 52 333 00 55</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span><a href="mailto:kontakt@iwonakarolewska.pl" id="email-swiecie">kontakt@iwonakarolewska.pl</a></span>
+                            </div>
+                            <div class="detail-row">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span>Poniedziałek - Piątek: 9:00 - 16:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-wrapper">
+                        <h4 style="font-weight: 700; color: var(--color-primary); margin-bottom: 16px;">Śledź moją aktywność</h4>
+                        <div class="social-links">
+                            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook Iwona Karolewska" id="social-fb">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram Iwona Karolewska" id="social-ig">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="https://twitter.com" class="social-icon" target="_blank" aria-label="Twitter / X Iwona Karolewska" id="social-x">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z M4 20l6.768 -6.768M20 4l-6.768 6.768"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal delay-2">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="formName" class="form-label">Imię i Nazwisko *</label>
+                            <input type="text" id="formName" class="form-control" placeholder="Jan Kowalski" required>
+                            <div class="form-error" id="nameError">Imię i nazwisko jest wymagane.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formEmail" class="form-label">Adres E-mail *</label>
+                            <input type="email" id="formEmail" class="form-control" placeholder="jan.kowalski@email.com" required>
+                            <div class="form-error" id="emailError">Proszę podać poprawny adres e-mail.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formSubject" class="form-label">Temat wiadomości *</label>
+                            <input type="text" id="formSubject" class="form-control" placeholder="np. Interwencja poselska, Zapytanie..." required>
+                            <div class="form-error" id="subjectError">Proszę wpisać temat wiadomości.</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formMessage" class="form-label">Treść wiadomości *</label>
+                            <textarea id="formMessage" class="form-control" placeholder="Opisz sprawę..." required></textarea>
+                            <div class="form-error" id="messageError">Wiadomość nie może być pusta.</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit-btn" id="btn-submit-form">
+                            <span>Wyślij wiadomość</span>
+                        </button>
+                        
+                        <div class="form-status" id="formStatus">
+                            <span class="status-message">Dziękujemy! Twoja wiadomość została wysłana pomyślnie. Skontaktujemy się wkrótce.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- FOOTER --- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">IK</div>
+                        <div class="logo-text">
+                            <span class="logo-title">Iwona Karolewska</span>
+                            <span class="logo-subtitle" style="color: rgba(255,255,255,0.6);">Posłanka na Sejm RP</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Mandat poselski to dla mnie zaszczyt i zobowiązanie. Pracuję dla regionu i jego mieszkańców, wierząc, że wspólnie możemy budować lepszą przyszłość.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#hero" id="footer-link-hero">Start</a></li>
+                        <li><a href="#about" id="footer-link-about">O mnie</a></li>
+                        <li><a href="#timeline" id="footer-link-timeline">Biografia</a></li>
+                        <li><a href="#focus" id="footer-link-focus">Działalność</a></li>
+                        <li><a href="#news" id="footer-link-news">Aktualności</a></li>
+                        <li><a href="#contact" id="footer-link-contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Klub Parlamentarny</h4>
+                    <p class="footer-meta-info">
+                        Członkini <strong>Klubu Parlamentarnego Koalicja Obywatelska</strong> (Platforma Obywatelska, Nowoczesna, Inicjatywa Polska, Zieloni).<br><br>
+                        Prace parlamentarne można śledzić na oficjalnych stronach Sejmu RP.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2026 Iwona Karolewska. Wszelkie prawa zastrzeżone. Strona w kolorach <span>Koalicji Obywatelskiej</span>.
+                </div>
+                <div class="footer-legal">
+                    Projekt i wdrożenie dla celów reprezentacyjnych.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
